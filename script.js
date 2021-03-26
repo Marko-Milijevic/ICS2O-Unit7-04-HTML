@@ -7,16 +7,14 @@ let userInput2 = 0
 function comparison () {
   userInput1 = document.getElementById('input1').value
   userInput1 = parseInt(userInput1)
-  
   userInput2 = document.getElementById('input2').value
-  
   if (userInput1 >= 4 && userInput1 <= 22) {
-    if (userInput2 == 'Saturday' || userInput2 == 'Sunday') {
+    if (userInput2 === 'Saturday' || userInput2 === 'Sunday') {
       document.getElementById('answer').innerHTML = 'You are not eligible.'
     } else {
-        document.getElementById('answer').innerHTML = 'You are eligible.'
+      document.getElementById('answer').innerHTML = 'You are eligible.'
     }
   } else {
-      document.getElementById('answer').innerHTML = 'You are not eligible.'
+    document.getElementById('answer').innerHTML = 'You are not eligible.'
   }
 }
